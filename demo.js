@@ -27,16 +27,16 @@ const pool = mysql.createPool(dbConfig);
 	const client = new Client();
 	// You can also specify a token: const client = new Client({ token: 'token' });
 	// await client.login(process.env.USER_NAME, process.env.PASSWORD);
-	// await client.users.fetch(25025320).then(user => {
+	// await client.users.fetch(60592010785).then(user => {
 	// 	console.log(user);
 	// });
 
-    // await client.feeds.fetch("_kim_mo_mo_").then(user => {
+    // await client.feeds.fetch("c4ei_net").then(user => {
     //     console.log(user);
 	// });
     // client.feeds.fetchThreads
 
-    await client.users.search("_kim_mo_mo_", 10).then(user => {
+    await client.users.search("c4ei_net", 10).then(user => {
         console.log(user);
     });
 
